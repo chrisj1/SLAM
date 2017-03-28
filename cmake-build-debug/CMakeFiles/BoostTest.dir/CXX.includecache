@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/chrisjerrett/Desktop/Slam/Roomba.cpp
+Roomba.h
+/Users/chrisjerrett/Desktop/Slam/Roomba.h
+
+/Users/chrisjerrett/Desktop/Slam/Roomba.h
+iostream
+-
+string
+-
+stdio.h
+-
+string.h
+-
+unistd.h
+-
+fcntl.h
+-
+errno.h
+-
+termios.h
+-
+
+/Users/chrisjerrett/Desktop/Slam/main.cpp
+iostream
+-
+Roomba.cpp
+/Users/chrisjerrett/Desktop/Slam/Roomba.cpp
+
