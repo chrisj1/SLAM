@@ -1,9 +1,11 @@
 #include "Roomba.h"
 
-Roomba::Roomba(const string portname) :fileDescriptor(-1), portname(portname), sensors(NULL), sensorsPolling(0),sensorThread(NULL) {
+Roomba::Roomba(const string portname) :fileDescriptor(-1), portname(portname),
+                                       sensors(NULL), sensorsPolling(0),sensorThread(NULL) {
     openSerialPort(portname);
     usleep(100);
     sendStart();
+    setPassiveMode();
     usleep(100);
 
     setFullMode();
@@ -30,7 +32,7 @@ void Roomba::setSensorStream(std::initializer_list<unsigned char> sensorsArg) {
 
 void Roomba::sendSensorStream() {
     unsigned char commandSequence[sensorsPolling + 2];
-    commandSequence[0] = (unsigned char) 149;
+    commandSequence[0] = (unsigned char) 148;
     commandSequence[1] = sensorsPolling;
 
     for(int i = 0; i < sensorsPolling; i++) {
@@ -43,14 +45,14 @@ void Roomba::sendSensorStream() {
 /*
  * This command starts the OI. You must always send the Start command before sending any other
  * commands to the OI.
-* Serial sequence: [128].
-* Available in modes: Passive, Safe, or Full
-* Changes mode to: Passive. Roomba beeps once to acknowledge it is starting from “off” mode.
-* This command starts the OI. You must always send the Start command before sending any other
-commands to the OI.
-* Serial sequence: [128].
-* Available in modes: Passive, Safe, or Full
-* Changes mode to: Passive. Roomba beeps once to acknowledge it is starting from “off” mode. 
+ * Serial sequence: [128].
+ * Available in modes: Passive, Safe, or Full
+ * Changes mode to: Passive. Roomba beeps once to acknowledge it is starting from “off” mode.
+ * This command starts the OI. You must always send the Start command before sending any other
+ * commands to the OI.
+ * Serial sequence: [128].
+ * Available in modes: Passive, Safe, or Full
+ * Changes mode to: Passive. Roomba beeps once to acknowledge it is starting from “off” mode.
  */
 const void Roomba::sendStart() {
     writeChar(131);
@@ -83,6 +85,10 @@ const void Roomba::setFullMode() {
 
 const void Roomba::setSafeMode() {
     writeChar(SAFE_OPT_CODE);
+}
+
+const void Roomba::setPassiveMode(){
+    writeChar(PASSIVE_OPT_CODE);
 }
 
 const void Roomba::stop() {
@@ -135,9 +141,10 @@ const void Roomba::drive(int velocity, int radius) {
 const void Roomba::writeChar(const unsigned char command) {
     cout << (unsigned int) command << endl;
     int n = write(fileDescriptor, (&command) , 1);
-    cout << "write" << endl;
     if (n < 0) {
-        cout << "Write failed attempting to reconnect" << endl;
+        cout << "Write failed!" << endl;
+        disconnected();
+        writeChar(command);
     }
 
 }
@@ -152,10 +159,26 @@ const void Roomba::openSerialPort(string portname) {
     const char* cString = portname.c_str();
     fileDescriptor = open(cString, O_RDWR | O_NOCTTY | O_NDELAY);
     if (fileDescriptor == -1) {
-        cout << "open_port: Unable to open port!" << endl;
+        cout << "Unable to open port!" << endl;
     } else {
         fcntl(fileDescriptor, F_SETFL, 0);
         cout << "connected" << endl;
+
+        speed_t baud = B;
+
+        struct termios settings;
+        tcgetattr(fileDescriptor, &settings);
+
+        cfsetospeed(&settings, baud);
+        settings.c_cflag &= ~PARENB;
+        settings.c_cflag &= ~CSTOPB;
+        settings.c_cflag &= ~CSIZE;
+        settings.c_cflag |= CS8 | CLOCAL;
+        settings.c_lflag = ICANON;
+        settings.c_oflag &= ~OPOST;
+
+        tcsetattr(fileDescriptor, TCSANOW, &settings);
+        tcflush(fileDescriptor, TCOFLUSH);
     }
 
     sleep(1);
@@ -181,15 +204,29 @@ const void Roomba::disconnected() {
 
 }
 
-const void Roomba::requestSensor(unsigned char id) {
-    writeChar(SENSORS_OPT_CODE);
-    writeChar(id);
-}
-
 const void Roomba::monitorSensors() {
-    while(true){}
+    while(true){
+        char c[2];
+        read(this->fileDescriptor, c, 1);
+        printChar(c[0]);
+        //printChar(c[1]);
+        usleep(150);
+    }
 }
 
 Roomba::~Roomba() {
     sensorThread->join();
+}
+
+void printChar(char c) {
+    for (int i = 0; i < 8; i++) {
+        printf("%d", ((c << i) & 0x80));
+    }
+    cout<<endl;
+}
+
+const void Roomba::driveFor(int right, int left, int time) {
+    driveDirect(right, left);
+    usleep(time);
+    stop();
 }

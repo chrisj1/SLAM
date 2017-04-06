@@ -1,24 +1,26 @@
 #include <iostream>
 #include "Roomba.cpp"
-#include <unistd.h>
 
 
 using namespace std;
+
+int randomInt(int min, int max) {
+    return (int) (rand() * (max - min)) + min;
+}
 
 int main() {
 
     Roomba r("/dev/cu.usbserial-DA01NQY7");
     sleep(1);
-    r.driveDirect(200, 200);
+    r.driveDirect(100,100);
 
-    //usleep(4000);
+    sleep(4);
     r.stop();
-
     unsigned char distance = 19;
     r.setSensorStream({distance});
-
-    //usleep(30000);
+    sleep(4);
 
     r.powerOff();
+    r.~Roomba();
     return 0;
 }

@@ -62,6 +62,7 @@ private:
      */
     const unsigned char SAFE_OPT_CODE = 131;
     const unsigned char FULL_OPT_CODE = 132;
+    const unsigned char PASSIVE_OPT_CODE = 128;
 
     /*
      * Movement opt codes
@@ -87,6 +88,7 @@ private:
     const unsigned char RIGHT_ENCODER = 44;
     const unsigned char WALL_SENSOR = 8;
 
+
     //Packet Ids:
     const unsigned char WALL = 8;
     const unsigned char DISTANCE = 19;
@@ -98,6 +100,7 @@ private:
     const void seekDock();
     const void setSafeMode();
     const void setFullMode();
+    const void setPassiveMode();
 
     const bool bumpWheelDrop();
     const int distanceDriven();
@@ -128,9 +131,12 @@ public:
     const void powerOff();
     const void drive(int velocity, int radius);
     const void requestSensor(unsigned char id);
+    const void driveFor(int right, int left, int time);
     ~Roomba();
 };
 
 Roomba* roomba = NULL;
+
+void printChar(char c);
 
 #endif //SLAM_ROOMBA_H
