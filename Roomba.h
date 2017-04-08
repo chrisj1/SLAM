@@ -46,6 +46,15 @@ private:
 
     thread* sensorThread;
 
+
+    /*
+     * Sesnor States
+     */
+    volatile bool leftWheelDrop = false;
+    volatile bool rightWheelDrop = false;
+    volatile bool bumpLeft = false;
+    volatile bool bumpRight = false;
+
     /**
      * Basic roomba opt codes to control
      * power and roomba io.
@@ -123,6 +132,12 @@ private:
 
     const void monitorSensors();
 
+    /*
+     * Sensor Processing
+     */
+
+    void bumpAndWheelDropDecode(unsigned char* byte);
+
 public:
     Roomba(const string portname);
     void setSensorStream(std::initializer_list<unsigned char> sensors);
@@ -132,6 +147,7 @@ public:
     const void drive(int velocity, int radius);
     const void requestSensor(unsigned char id);
     const void driveFor(int right, int left, int time);
+    const void beep();
     ~Roomba();
 };
 

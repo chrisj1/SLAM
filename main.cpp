@@ -4,23 +4,20 @@
 
 using namespace std;
 
-int randomInt(int min, int max) {
-    return (int) (rand() * (max - min)) + min;
+char randomInt(char min, char max) {
+    return (char) (rand() * (max - min)) + min;
 }
 
 int main() {
 
     Roomba r("/dev/cu.usbserial-DA01NQY7");
     sleep(1);
-    r.driveDirect(100,100);
-
-    sleep(4);
-    r.stop();
-    unsigned char distance = 19;
-    r.setSensorStream({distance});
-    sleep(4);
-
-    r.powerOff();
-    r.~Roomba();
+    r.setSensorStream({7});
+    while(true) {
+        r.driveDirect(randomInt(-100, 100), randomInt(-100, 100));
+        sleep(3);
+        r.stop();
+        r.beep();
+    }
     return 0;
 }

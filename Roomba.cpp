@@ -41,7 +41,6 @@ void Roomba::sendSensorStream() {
     writeCharArray(commandSequence, sensorsPolling + 2);
 
 }
-
 /*
  * This command starts the OI. You must always send the Start command before sending any other
  * commands to the OI.
@@ -57,7 +56,7 @@ void Roomba::sendSensorStream() {
 const void Roomba::sendStart() {
     writeChar(131);
 }
-/**
+/*
  * This command starts the requested built-in demo.
  * Serial sequence: [136][Which-demo]
  * Available in modes: Passive, Safe, or Full
@@ -164,7 +163,7 @@ const void Roomba::openSerialPort(string portname) {
         fcntl(fileDescriptor, F_SETFL, 0);
         cout << "connected" << endl;
 
-        speed_t baud = B;
+        speed_t baud = B115200;
 
         struct termios settings;
         tcgetattr(fileDescriptor, &settings);
@@ -173,9 +172,9 @@ const void Roomba::openSerialPort(string portname) {
         settings.c_cflag &= ~PARENB;
         settings.c_cflag &= ~CSTOPB;
         settings.c_cflag &= ~CSIZE;
-        settings.c_cflag |= CS8 | CLOCAL;
-        settings.c_lflag = ICANON;
-        settings.c_oflag &= ~OPOST;
+        //settings.c_cflag |= CS8 | CLOCAL;
+        //settings.c_lflag = ICANON;
+        //settings.c_oflag &= ~OPOST;
 
         tcsetattr(fileDescriptor, TCSANOW, &settings);
         tcflush(fileDescriptor, TCOFLUSH);
@@ -206,11 +205,32 @@ const void Roomba::disconnected() {
 
 const void Roomba::monitorSensors() {
     while(true){
-        char c[2];
-        read(this->fileDescriptor, c, 1);
-        printChar(c[0]);
-        //printChar(c[1]);
-        usleep(150);
+        unsigned char c[100];
+        unsigned char* headerByte = 0;
+        unsigned char* sizeByte = 0;
+        read(this->fileDescriptor, c, 100);
+        bool printed = false;
+        for(int i = 0; i < 10; i++) {
+            if(c[i] == 0x0)
+                continue;
+            if(c[i] == 0x13) {
+                headerByte = c + i;
+            }
+            /*printf("[");
+            printf("0x%x", c[i]);
+            printf("],");*/
+            printed = true;
+
+        }
+        if(printed) {
+            //cout << endl;
+        }
+
+        if(headerByte != 0) {
+            bumpAndWheelDropDecode(headerByte + 3);
+        }
+
+        usleep(15000);
     }
 }
 
@@ -229,4 +249,22 @@ const void Roomba::driveFor(int right, int left, int time) {
     driveDirect(right, left);
     usleep(time);
     stop();
+}
+
+const void Roomba::beep() {
+    unsigned char commands[] = {140, 3, 1, 64, 16, 141, 3};
+    writeCharArray(commands, 7);
+}
+
+void Roomba::bumpAndWheelDropDecode(unsigned char* byte) {
+    bumpRight = *(byte) & 0b0001;
+    bumpLeft = *(byte) & 0b0010;
+    rightWheelDrop = *(byte) & 0b0100;
+    leftWheelDrop = *(byte) & 0b1000;
+
+    printf("[");
+    printf("0x%x", *byte);
+    printf("],");
+
+    cout << "br:" << bumpRight << " bl" << bumpLeft << " rw: " << rightWheelDrop << " lw" << leftWheelDrop << endl;
 }
