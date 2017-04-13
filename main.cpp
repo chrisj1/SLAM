@@ -1,23 +1,29 @@
 #include <iostream>
-#include "Roomba.cpp"
-
-
-using namespace std;
-
-char randomInt(char min, char max) {
-    return (char) (rand() * (max - min)) + min;
-}
+#include "Roomba.h"
 
 int main() {
 
     Roomba r("/dev/cu.usbserial-DA01NQY7");
     sleep(1);
-    r.setSensorStream({7});
-    while(true) {
-        r.driveDirect(randomInt(-100, 100), randomInt(-100, 100));
-        sleep(3);
+    r.setSensorStream({BumpsWheelDrops, LeftEncoderCounts, RightEncoderCounts});
+    sleep(1);
+    while(!r.leftWheelDrop && !r.rightWheelDrop) {
+        float right = 10;
+        float left = 5;
+        while(!r.bumpRight && !r.bumpLeft) {
+            right+=.2;
+            left +=.1;
+            //r.driveDirect((int)right, (int)left);
+            usleep(5000);
+        }
         r.stop();
-        r.beep();
+        //r.beep();
+        r.driveDirect(-100, -150);
+        sleep(2);
     }
+
+    //r.beep();
+    r.setPassiveMode();
+    r.~Roomba();
     return 0;
 }

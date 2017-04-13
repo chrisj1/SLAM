@@ -8,7 +8,7 @@ class Lidar {
         int angle;
         StepperMotor motor;
     public:
-        Lidar();
+        Lidar(StepperMotor stepperMotor);
         const int getReading();
         const int getAngle();
 };

@@ -1,1 +1,1 @@
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/Slam.dir/main.cpp.o  -o Slam 
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/Slam.dir/Lidar.cpp.o CMakeFiles/Slam.dir/main.cpp.o CMakeFiles/Slam.dir/Roomba.cpp.o CMakeFiles/Slam.dir/StepperMotor.cpp.o  -o Slam 

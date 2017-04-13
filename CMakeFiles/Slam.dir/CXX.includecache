@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+/Users/chrisjerrett/Desktop/Slam/Lidar.cpp
+Lidar.h
+/Users/chrisjerrett/Desktop/Slam/Lidar.h
+
+/Users/chrisjerrett/Desktop/Slam/Lidar.h
+StepperMotor.h
+/Users/chrisjerrett/Desktop/Slam/StepperMotor.h
+
 /Users/chrisjerrett/Desktop/Slam/Roomba.cpp
 Roomba.h
 /Users/chrisjerrett/Desktop/Slam/Roomba.h
@@ -42,9 +50,15 @@ errno.h
 termios.h
 -
 
+/Users/chrisjerrett/Desktop/Slam/StepperMotor.cpp
+StepperMotor.h
+/Users/chrisjerrett/Desktop/Slam/StepperMotor.h
+
+/Users/chrisjerrett/Desktop/Slam/StepperMotor.h
+
 /Users/chrisjerrett/Desktop/Slam/main.cpp
 iostream
 -
-Roomba.cpp
-/Users/chrisjerrett/Desktop/Slam/Roomba.cpp
+Roomba.h
+/Users/chrisjerrett/Desktop/Slam/Roomba.h
 
