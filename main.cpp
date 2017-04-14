@@ -17,7 +17,7 @@ int main() {
             usleep(5000);
         }
         r.stop();
-        //r.beep();
+        r.beep();
         r.driveDirect(-100, -150);
         sleep(2);
     }

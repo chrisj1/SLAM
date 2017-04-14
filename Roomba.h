@@ -85,44 +85,7 @@ using namespace std;
          */
         const unsigned char SENSORS_OPT_CODE = 142;
 
-        /*
-         * Sensor packet ids
-         */
-        const unsigned char BUMP_WHEEL_DROP_SENSOR = 7;
-        const unsigned char DISTANCE_SENSOR = 19;
-        const unsigned char ANGLE_SENSOR = 20;
-        const unsigned char VOLTAGE_SENSOR = 22;
-        const unsigned char BATTER_CHARGE_SENSOR = 25;
-        const unsigned char BATTERY_CAPACITY_SENSOR = 26;
-        const unsigned char LEFT_ENCODER = 43;
-        const unsigned char RIGHT_ENCODER = 44;
-        const unsigned char WALL_SENSOR = 8;
-
-
-        //Packet Ids:
-        const unsigned char WALL = 8;
-        const unsigned char DISTANCE = 19;
-        const unsigned char ANGLE = 20;
-        const unsigned char VOLTAGE = 22;
-        const unsigned char CHARGE = 24;
-
         const void sendStart();
-
-        const bool bumpWheelDrop();
-
-        const int distanceDriven();
-
-        const int angleTurned();
-
-        const int voltage();
-
-        const int batteryCharge();
-
-        const int batteryCapacity();
-
-        const int leftEncoder();
-
-        const int rightEncoder();
 
         const void writeChar(const unsigned char command);
 
@@ -144,10 +107,15 @@ using namespace std;
          * Sensor Processing
          */
 
-        void bumpAndWheelDropDecode(unsigned char *byte);
+        void parseBumpAndWheelDrop(unsigned char *byte);
+
+        void parseDistance(unsigned char *elem);
+        void parseAngle(const unsigned char* elem);
+        void parseLeftEncoderCounts(const unsigned char* elem);
+        void parseRightEncoderCounts(const unsigned char* elem);
 
         unsigned char* findHeader(unsigned char *c) const;
-        void parseBytes(const unsigned char *headerByte, unsigned char size) const;
+        void parseBytes(const unsigned char *headerByte, unsigned char size);
 
     public:
 
