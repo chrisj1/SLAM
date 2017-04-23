@@ -5,23 +5,13 @@
 		<Option title="Slam"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\Qt\;CMake Files\..\..\Qt\5.8\;CMake Files\..\..\Qt\5.8\clang_64\;CMake Files\..\..\Qt\5.8\clang_64\lib\;CMake Files\..\..\Qt\5.8\clang_64\lib\cmake\;CMake Files\..\..\Qt\5.8\clang_64\lib\cmake\Qt5Widgets\;CMake Files\..\..\Qt\5.8\clang_64\lib\cmake\Qt5Gui\;CMake Files\..\..\Qt\5.8\clang_64\lib\cmake\Qt5Core\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/chrisjerrett/Desktop/Slam"/>
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j4 -f &quot;/Users/chrisjerrett/Desktop/Slam/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chrisjerrett/Desktop/Slam/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chrisjerrett/Desktop/Slam/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chrisjerrett/Desktop/Slam/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/Users/chrisjerrett/Desktop/Slam"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/chrisjerrett/Desktop/Slam/Makefile&quot;  VERBOSE=1 edit_cache"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chrisjerrett/Desktop/Slam/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chrisjerrett/Desktop/Slam/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chrisjerrett/Desktop/Slam/Makefile&quot;  VERBOSE=1 clean"/>
@@ -37,6 +27,16 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chrisjerrett/Desktop/Slam/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/chrisjerrett/Desktop/Slam"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/chrisjerrett/Desktop/Slam/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chrisjerrett/Desktop/Slam/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chrisjerrett/Desktop/Slam/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chrisjerrett/Desktop/Slam/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="Slam">
 				<Option output="/Users/chrisjerrett/Desktop/Slam/Slam" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/chrisjerrett/Desktop/Slam"/>
@@ -44,13 +44,24 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add directory="/Users/chrisjerrett/Qt/5.8/clang_64/lib/QtWidgets.framework"/>
+					<Add directory="/Users/chrisjerrett/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers"/>
+					<Add directory="/Users/chrisjerrett/Qt/5.8/clang_64/lib/QtGui.framework"/>
+					<Add directory="/Users/chrisjerrett/Qt/5.8/clang_64/lib/QtGui.framework/Headers"/>
+					<Add directory="/System/Library/Frameworks/OpenGL.framework/Headers"/>
+					<Add directory="/Users/chrisjerrett/Qt/5.8/clang_64/lib/QtCore.framework"/>
+					<Add directory="/Users/chrisjerrett/Qt/5.8/clang_64/lib/QtCore.framework/Headers"/>
+					<Add directory="/Users/chrisjerrett/Qt/5.8/clang_64/./mkspecs/macx-clang"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
 					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j4 -f &quot;/Users/chrisjerrett/Desktop/Slam/Makefile&quot;  VERBOSE=1 Slam"/>
@@ -66,13 +77,24 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add directory="/Users/chrisjerrett/Qt/5.8/clang_64/lib/QtWidgets.framework"/>
+					<Add directory="/Users/chrisjerrett/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers"/>
+					<Add directory="/Users/chrisjerrett/Qt/5.8/clang_64/lib/QtGui.framework"/>
+					<Add directory="/Users/chrisjerrett/Qt/5.8/clang_64/lib/QtGui.framework/Headers"/>
+					<Add directory="/System/Library/Frameworks/OpenGL.framework/Headers"/>
+					<Add directory="/Users/chrisjerrett/Qt/5.8/clang_64/lib/QtCore.framework"/>
+					<Add directory="/Users/chrisjerrett/Qt/5.8/clang_64/lib/QtCore.framework/Headers"/>
+					<Add directory="/Users/chrisjerrett/Qt/5.8/clang_64/./mkspecs/macx-clang"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
 					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j4 -f &quot;/Users/chrisjerrett/Desktop/Slam/Makefile&quot;  VERBOSE=1 Slam/fast"/>
@@ -82,10 +104,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/chrisjerrett/Desktop/Slam/Calculations.cpp">
+			<Option target="Slam"/>
+		</Unit>
+		<Unit filename="/Users/chrisjerrett/Desktop/Slam/Calculations.h">
+			<Option target="Slam"/>
+		</Unit>
 		<Unit filename="/Users/chrisjerrett/Desktop/Slam/Lidar.cpp">
 			<Option target="Slam"/>
 		</Unit>
 		<Unit filename="/Users/chrisjerrett/Desktop/Slam/Lidar.h">
+			<Option target="Slam"/>
+		</Unit>
+		<Unit filename="/Users/chrisjerrett/Desktop/Slam/PaintArea.cpp">
+			<Option target="Slam"/>
+		</Unit>
+		<Unit filename="/Users/chrisjerrett/Desktop/Slam/PaintArea.h">
 			<Option target="Slam"/>
 		</Unit>
 		<Unit filename="/Users/chrisjerrett/Desktop/Slam/Roomba.cpp">
@@ -105,6 +139,84 @@
 		</Unit>
 		<Unit filename="/Users/chrisjerrett/Desktop/Slam/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/chrisjerrett/Desktop/Slam/../../Qt/5.8/clang_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.8\clang_64\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/Users/chrisjerrett/Desktop/Slam/../../Qt/5.8/clang_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.8\clang_64\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/Users/chrisjerrett/Desktop/Slam/../../Qt/5.8/clang_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.8\clang_64\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/Users/chrisjerrett/Desktop/Slam/../../Qt/5.8/clang_64/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.8\clang_64\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/Users/chrisjerrett/Desktop/Slam/../../Qt/5.8/clang_64/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.8\clang_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/chrisjerrett/Desktop/Slam/../../Qt/5.8/clang_64/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.8\clang_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/chrisjerrett/Desktop/Slam/../../Qt/5.8/clang_64/lib/cmake/Qt5Gui/Qt5Gui_QCocoaIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.8\clang_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/chrisjerrett/Desktop/Slam/../../Qt/5.8/clang_64/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.8\clang_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/chrisjerrett/Desktop/Slam/../../Qt/5.8/clang_64/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.8\clang_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/chrisjerrett/Desktop/Slam/../../Qt/5.8/clang_64/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.8\clang_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/chrisjerrett/Desktop/Slam/../../Qt/5.8/clang_64/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.8\clang_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/chrisjerrett/Desktop/Slam/../../Qt/5.8/clang_64/lib/cmake/Qt5Gui/Qt5Gui_QMacJp2Plugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.8\clang_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/chrisjerrett/Desktop/Slam/../../Qt/5.8/clang_64/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.8\clang_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/chrisjerrett/Desktop/Slam/../../Qt/5.8/clang_64/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.8\clang_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/chrisjerrett/Desktop/Slam/../../Qt/5.8/clang_64/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.8\clang_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/chrisjerrett/Desktop/Slam/../../Qt/5.8/clang_64/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.8\clang_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/chrisjerrett/Desktop/Slam/../../Qt/5.8/clang_64/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.8\clang_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/chrisjerrett/Desktop/Slam/../../Qt/5.8/clang_64/lib/cmake/Qt5Gui/Qt5Gui_QVirtualKeyboardPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.8\clang_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/chrisjerrett/Desktop/Slam/../../Qt/5.8/clang_64/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.8\clang_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/chrisjerrett/Desktop/Slam/../../Qt/5.8/clang_64/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.8\clang_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/chrisjerrett/Desktop/Slam/../../Qt/5.8/clang_64/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.8\clang_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/chrisjerrett/Desktop/Slam/../../Qt/5.8/clang_64/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.8\clang_64\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/Users/chrisjerrett/Desktop/Slam/../../Qt/5.8/clang_64/lib/cmake/Qt5Core/Qt5CoreConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.8\clang_64\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/Users/chrisjerrett/Desktop/Slam/../../Qt/5.8/clang_64/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.8\clang_64\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/Users/chrisjerrett/Desktop/Slam/../../Qt/5.8/clang_64/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.8\clang_64\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/Users/chrisjerrett/Desktop/Slam/../../Qt/5.8/clang_64/lib/cmake/Qt5Core/Qt5CoreMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.8\clang_64\lib\cmake\Qt5Core\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

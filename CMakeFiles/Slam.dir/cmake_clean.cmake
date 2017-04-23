@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Slam.dir/main.cpp.o"
   "CMakeFiles/Slam.dir/Roomba.cpp.o"
   "CMakeFiles/Slam.dir/StepperMotor.cpp.o"
+  "CMakeFiles/Slam.dir/PaintArea.cpp.o"
+  "CMakeFiles/Slam.dir/Calculations.cpp.o"
   "Slam.pdb"
   "Slam"
 )

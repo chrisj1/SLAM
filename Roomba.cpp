@@ -1,9 +1,7 @@
 #include "Roomba.h"
 
-
 Roomba::Roomba(const string portname) : fileDescriptor(-1), portname(portname), sensorThread(NULL) {
     openSerialPort(portname);
-    usleep(100);
     sendStart();
     setSafeMode();
     usleep(1000);
@@ -13,7 +11,7 @@ Roomba::Roomba(const string portname) : fileDescriptor(-1), portname(portname), 
 
 void Roomba::setSensorStream(std::initializer_list<unsigned char> sensorsArg) {
     sensors = std::vector<Sensor>();
-    int size = sensorsArg.size();
+    size_t size = sensorsArg.size();
     unsigned char sensorsArray[size];
     int i = 0;
     for (auto elem : sensorsArg) {
@@ -28,7 +26,7 @@ void Roomba::setSensorStream(std::initializer_list<unsigned char> sensorsArg) {
 void Roomba::sendSensorStream() {
     unsigned char commandSequence[sensors.size() + 2];
     commandSequence[0] = (unsigned char) 148;
-    commandSequence[1] = sensors.size();
+    commandSequence[1] = static_cast<unsigned char>(sensors.size());
 
     for (int i = 0; i < sensors.size(); i++) {
         commandSequence[i + 2] = sensors[i];
@@ -128,10 +126,9 @@ const void Roomba::drive(int velocity, int radius) {
 }
 
 const void Roomba::writeChar(const unsigned char command) {
-    cout << (int) command << endl;
     int n = write(fileDescriptor, (&command), 1);
     if (n < 0) {
-        cout << "Write failed!" << endl;
+        cerr << "Write failed!" << endl;
         disconnected();
         writeChar(command);
     }
@@ -207,7 +204,6 @@ const void Roomba::monitorSensors() {
         cout << "size: " << static_cast<int>(size) << endl;
         for (unsigned char *i = headerByte; i < headerByte + size + 2; i++) {
             total += *i;
-            //printf("total: 0x%x\n", total);
         }
         total += checksum;
 
@@ -216,10 +212,6 @@ const void Roomba::monitorSensors() {
             continue;
         }
 
-
-        printf("final total: 0x%x\n", total);
-
-        printf("Check: 0x%x\n", checksum);
         if (headerByte != 0) {
             parseBytes(headerByte, size);
         }
@@ -228,7 +220,7 @@ const void Roomba::monitorSensors() {
     }
 }
 
-unsigned char* Roomba::findHeader(unsigned char *c) const {
+unsigned char *Roomba::findHeader(unsigned char *c) const {
     unsigned char *headerByte = NULL;
     for (int i = 0; i < 10; i++) {
         if (c[i] == 0x0)
@@ -242,35 +234,40 @@ unsigned char* Roomba::findHeader(unsigned char *c) const {
 }
 
 void Roomba::parseBytes(const unsigned char *headerByte, unsigned char size) {
-    for(unsigned char* elem = const_cast<unsigned char*>(headerByte + 2); elem < headerByte + size;) {
-        cout << "sensor: " << (int)*elem << endl;
-        int databytes = DATA_BYTES.at(Sensor(static_cast<int>(*elem)));
-        cout << "sensor databytes: " << databytes << endl;
-        cout << "Enum: " << static_cast<Sensor>(*elem) << endl;
-        switch (static_cast<Sensor>(*elem)) {
-            case Distance:
-                cout << "Distance" << endl;
-                parseDistance(elem+1);
-                break;
-            case Angle:
-                cout << "Angle" << endl;
-                parseAngle(elem+1);
-                break;
-            case LeftEncoderCounts:
-                cout << "Left" << endl;
-                parseLeftEncoderCounts(elem+1);
-                break;
-            case RightEncoderCounts:
-                parseRightEncoderCounts(elem+1);
-                cout << "Right" << endl;
-                break;
-            case BumpsWheelDrops:
-                cout << "Bump and Wheel" << endl;
-                parseBumpAndWheelDrop(elem+1);
-                break;
-        }
+    for (unsigned char *elem = const_cast<unsigned char *>(headerByte + 2); elem < headerByte + size;) {
+        try {
+            cout << "sensor: " << (int) *elem << endl;
+            int databytes = DATA_BYTES.at(Sensor(static_cast<int>(*elem)));
+            cout << "sensor databytes: " << databytes << endl;
+            cout << "Enum: " << static_cast<Sensor>(*elem) << endl;
+            switch (static_cast<Sensor>(*elem)) {
+                case Distance:
+                    cout << "Distance" << endl;
+                    parseDistance(elem + 1);
+                    break;
+                case Angle:
+                    cout << "Angle" << endl;
+                    parseAngle(elem + 1);
+                    break;
+                case LeftEncoderCounts:
+                    cout << "Left" << endl;
+                    parseLeftEncoderCounts(elem + 1);
+                    break;
+                case RightEncoderCounts:
+                    parseRightEncoderCounts(elem + 1);
+                    cout << "Right" << endl;
+                    break;
+                case BumpsWheelDrops:
+                    cout << "Bump and Wheel" << endl;
+                    parseBumpAndWheelDrop(elem + 1);
+                    break;
+            }
 
-        elem+=databytes+1;
+            elem += databytes + 1;
+        } catch (std::out_of_range e) {
+            cerr << "Tried to read out of range map value" << endl;
+            return;
+        }
     }
 }
 
@@ -279,17 +276,17 @@ void Roomba::parseDistance(unsigned char *elem) {
 }
 
 
-void Roomba::parseAngle(const unsigned char* elem) {
+void Roomba::parseAngle(const unsigned char *elem) {
 
 }
 
 
-void Roomba::parseLeftEncoderCounts(const unsigned char* elem) {
+void Roomba::parseLeftEncoderCounts(const unsigned char *elem) {
 
 }
 
 
-void Roomba::parseRightEncoderCounts(const unsigned char* elem) {
+void Roomba::parseRightEncoderCounts(const unsigned char *elem) {
 
 }
 

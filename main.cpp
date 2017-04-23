@@ -1,29 +1,28 @@
 #include <iostream>
 #include "Roomba.h"
+#include <QtGui>
+#include <QtWidgets>
+#include <QPushButton>
+#include "PaintArea.h"
 
-int main() {
-
-    Roomba r("/dev/cu.usbserial-DA01NQY7");
+void configureRoomba() {
+    Roomba *r = new Roomba("/dev/cu.usbserial-DA01NQY7");
     sleep(1);
-    r.setSensorStream({BumpsWheelDrops, LeftEncoderCounts, RightEncoderCounts});
+    r->setSensorStream({BumpsWheelDrops, LeftEncoderCounts, RightEncoderCounts});
     sleep(1);
-    while(!r.leftWheelDrop && !r.rightWheelDrop) {
-        float right = 10;
-        float left = 5;
-        while(!r.bumpRight && !r.bumpLeft) {
-            right+=.2;
-            left +=.1;
-            //r.driveDirect((int)right, (int)left);
-            usleep(5000);
-        }
-        r.stop();
-        r.beep();
-        r.driveDirect(-100, -150);
-        sleep(2);
-    }
+}
 
-    //r.beep();
-    r.setPassiveMode();
-    r.~Roomba();
+void createWindow(int argc, char* argv[]) {
+    QApplication app(argc, argv);
+    PaintArea area;
+    area.show();
+    area.setFixedSize(800, 800);
+    app.exec();
+}
+
+
+int main(int argc, char *argv[]) {
+    //configureRoomba();
+    createWindow(argc, argv);
     return 0;
 }

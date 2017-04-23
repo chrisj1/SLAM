@@ -4,6 +4,7 @@
 
 #ifndef SLAM_ROOMBA_H
 #define SLAM_ROOMBA_H
+
 #include <iostream>
 #include <string>
 #include <cstdlib>
@@ -14,18 +15,17 @@
 #include <vector>
 #include <map>
 
-#include <stdio.h>   /* Standard input/output definitions */
-#include <string.h>  /* String function definitions */
-#include <unistd.h>  /* UNIX standard function definitions */
-#include <fcntl.h>   /* File control definitions */
-#include <errno.h>   /* Error number definitions */
-#include <termios.h> /* POSIX terminal control definitions */
+#include <stdio.h>
+#include <string.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <errno.h>
+#include <termios.h>
 
 #pragma once
 
 
 using namespace std;
-
 
     enum Sensor {
         BumpsWheelDrops = 7,
@@ -138,8 +138,6 @@ using namespace std;
         const void powerOff();
 
         const void drive(int velocity, int radius);
-
-        const void requestSensor(unsigned char id);
 
         const void driveFor(int right, int left, int time);
 
