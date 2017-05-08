@@ -1,4 +1,4 @@
-#include "Roomba.h"
+#include "../include/Roomba.h"
 
 Roomba::Roomba(const string portname) : fileDescriptor(-1), portname(portname), sensorThread(NULL) {
     openSerialPort(portname);

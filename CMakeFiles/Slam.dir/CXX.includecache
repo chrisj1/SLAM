@@ -6,27 +6,27 @@
 
 #IncludeRegexTransform: 
 
-/Users/chrisjerrett/Desktop/Slam/Calculations.cpp
-Calculations.h
-/Users/chrisjerrett/Desktop/Slam/Calculations.h
-
-/Users/chrisjerrett/Desktop/Slam/Calculations.h
+/Users/chrisjerrett/Desktop/Slam/include/Calculations.h
 math.h
-/Users/chrisjerrett/Desktop/Slam/math.h
+/Users/chrisjerrett/Desktop/Slam/include/math.h
 
-/Users/chrisjerrett/Desktop/Slam/Lidar.cpp
-Lidar.h
-/Users/chrisjerrett/Desktop/Slam/Lidar.h
+/Users/chrisjerrett/Desktop/Slam/include/Lidar.h
+iostream
+-
+stdio.h
+-
+string.h
+-
+unistd.h
+-
+fcntl.h
+-
+errno.h
+-
+termios.h
+-
 
-/Users/chrisjerrett/Desktop/Slam/Lidar.h
-StepperMotor.h
-/Users/chrisjerrett/Desktop/Slam/StepperMotor.h
-
-/Users/chrisjerrett/Desktop/Slam/PaintArea.cpp
-PaintArea.h
-/Users/chrisjerrett/Desktop/Slam/PaintArea.h
-
-/Users/chrisjerrett/Desktop/Slam/PaintArea.h
+/Users/chrisjerrett/Desktop/Slam/include/PaintArea.h
 QWidget
 -
 QPainter
@@ -39,14 +39,10 @@ QTimer
 -
 map
 -
-Calculations.cpp
-/Users/chrisjerrett/Desktop/Slam/Calculations.cpp
+../src/Calculations.cpp
+/Users/chrisjerrett/Desktop/Slam/src/Calculations.cpp
 
-/Users/chrisjerrett/Desktop/Slam/Roomba.cpp
-Roomba.h
-/Users/chrisjerrett/Desktop/Slam/Roomba.h
-
-/Users/chrisjerrett/Desktop/Slam/Roomba.h
+/Users/chrisjerrett/Desktop/Slam/include/Roomba.h
 iostream
 -
 string
@@ -78,25 +74,35 @@ errno.h
 termios.h
 -
 
-/Users/chrisjerrett/Desktop/Slam/StepperMotor.cpp
-StepperMotor.h
-/Users/chrisjerrett/Desktop/Slam/StepperMotor.h
+/Users/chrisjerrett/Desktop/Slam/src/Calculations.cpp
+../include/Calculations.h
+/Users/chrisjerrett/Desktop/Slam/include/Calculations.h
 
-/Users/chrisjerrett/Desktop/Slam/StepperMotor.h
+/Users/chrisjerrett/Desktop/Slam/src/Lidar.cpp
+../include/Lidar.h
+/Users/chrisjerrett/Desktop/Slam/include/Lidar.h
 
-/Users/chrisjerrett/Desktop/Slam/main.cpp
+/Users/chrisjerrett/Desktop/Slam/src/PaintArea.cpp
+../include/PaintArea.h
+/Users/chrisjerrett/Desktop/Slam/include/PaintArea.h
+
+/Users/chrisjerrett/Desktop/Slam/src/Roomba.cpp
+../include/Roomba.h
+/Users/chrisjerrett/Desktop/Slam/include/Roomba.h
+
+/Users/chrisjerrett/Desktop/Slam/src/main.cpp
 iostream
 -
-Roomba.h
-/Users/chrisjerrett/Desktop/Slam/Roomba.h
+../include/Roomba.h
+/Users/chrisjerrett/Desktop/Slam/include/Roomba.h
 QtGui
 -
 QtWidgets
 -
 QPushButton
 -
-PaintArea.h
-/Users/chrisjerrett/Desktop/Slam/PaintArea.h
+../include/PaintArea.h
+/Users/chrisjerrett/Desktop/Slam/include/PaintArea.h
 
 /Users/chrisjerrett/Qt/5.8/clang_64/lib/QtCore.framework/Headers/QTimer
 qtimer.h

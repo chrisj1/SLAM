@@ -1,9 +1,9 @@
 #include <iostream>
-#include "Roomba.h"
+#include "../include/Roomba.h"
 #include <QtGui>
 #include <QtWidgets>
 #include <QPushButton>
-#include "PaintArea.h"
+#include "../include/PaintArea.h"
 Roomba *r;
 
 void configureRoomba() {

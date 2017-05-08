@@ -104,37 +104,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/chrisjerrett/Desktop/Slam/Calculations.cpp">
+		<Unit filename="/Users/chrisjerrett/Desktop/Slam/src/Calculations.cpp">
 			<Option target="Slam"/>
 		</Unit>
-		<Unit filename="/Users/chrisjerrett/Desktop/Slam/Calculations.h">
+		<Unit filename="/Users/chrisjerrett/Desktop/Slam/src/Lidar.cpp">
 			<Option target="Slam"/>
 		</Unit>
-		<Unit filename="/Users/chrisjerrett/Desktop/Slam/Lidar.cpp">
+		<Unit filename="/Users/chrisjerrett/Desktop/Slam/src/PaintArea.cpp">
 			<Option target="Slam"/>
 		</Unit>
-		<Unit filename="/Users/chrisjerrett/Desktop/Slam/Lidar.h">
+		<Unit filename="/Users/chrisjerrett/Desktop/Slam/src/Roomba.cpp">
 			<Option target="Slam"/>
 		</Unit>
-		<Unit filename="/Users/chrisjerrett/Desktop/Slam/PaintArea.cpp">
-			<Option target="Slam"/>
-		</Unit>
-		<Unit filename="/Users/chrisjerrett/Desktop/Slam/PaintArea.h">
-			<Option target="Slam"/>
-		</Unit>
-		<Unit filename="/Users/chrisjerrett/Desktop/Slam/Roomba.cpp">
-			<Option target="Slam"/>
-		</Unit>
-		<Unit filename="/Users/chrisjerrett/Desktop/Slam/Roomba.h">
-			<Option target="Slam"/>
-		</Unit>
-		<Unit filename="/Users/chrisjerrett/Desktop/Slam/StepperMotor.cpp">
-			<Option target="Slam"/>
-		</Unit>
-		<Unit filename="/Users/chrisjerrett/Desktop/Slam/StepperMotor.h">
-			<Option target="Slam"/>
-		</Unit>
-		<Unit filename="/Users/chrisjerrett/Desktop/Slam/main.cpp">
+		<Unit filename="/Users/chrisjerrett/Desktop/Slam/src/main.cpp">
 			<Option target="Slam"/>
 		</Unit>
 		<Unit filename="/Users/chrisjerrett/Desktop/Slam/CMakeLists.txt">

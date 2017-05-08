@@ -57,174 +57,148 @@ include CMakeFiles/Slam.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Slam.dir/flags.make
 
-CMakeFiles/Slam.dir/Lidar.cpp.o: CMakeFiles/Slam.dir/flags.make
-CMakeFiles/Slam.dir/Lidar.cpp.o: Lidar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chrisjerrett/Desktop/Slam/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Slam.dir/Lidar.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Slam.dir/Lidar.cpp.o -c /Users/chrisjerrett/Desktop/Slam/Lidar.cpp
+CMakeFiles/Slam.dir/src/Lidar.cpp.o: CMakeFiles/Slam.dir/flags.make
+CMakeFiles/Slam.dir/src/Lidar.cpp.o: src/Lidar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chrisjerrett/Desktop/Slam/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Slam.dir/src/Lidar.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Slam.dir/src/Lidar.cpp.o -c /Users/chrisjerrett/Desktop/Slam/src/Lidar.cpp
 
-CMakeFiles/Slam.dir/Lidar.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Slam.dir/Lidar.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chrisjerrett/Desktop/Slam/Lidar.cpp > CMakeFiles/Slam.dir/Lidar.cpp.i
+CMakeFiles/Slam.dir/src/Lidar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Slam.dir/src/Lidar.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chrisjerrett/Desktop/Slam/src/Lidar.cpp > CMakeFiles/Slam.dir/src/Lidar.cpp.i
 
-CMakeFiles/Slam.dir/Lidar.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Slam.dir/Lidar.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chrisjerrett/Desktop/Slam/Lidar.cpp -o CMakeFiles/Slam.dir/Lidar.cpp.s
+CMakeFiles/Slam.dir/src/Lidar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Slam.dir/src/Lidar.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chrisjerrett/Desktop/Slam/src/Lidar.cpp -o CMakeFiles/Slam.dir/src/Lidar.cpp.s
 
-CMakeFiles/Slam.dir/Lidar.cpp.o.requires:
+CMakeFiles/Slam.dir/src/Lidar.cpp.o.requires:
 
-.PHONY : CMakeFiles/Slam.dir/Lidar.cpp.o.requires
+.PHONY : CMakeFiles/Slam.dir/src/Lidar.cpp.o.requires
 
-CMakeFiles/Slam.dir/Lidar.cpp.o.provides: CMakeFiles/Slam.dir/Lidar.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/Lidar.cpp.o.provides.build
-.PHONY : CMakeFiles/Slam.dir/Lidar.cpp.o.provides
+CMakeFiles/Slam.dir/src/Lidar.cpp.o.provides: CMakeFiles/Slam.dir/src/Lidar.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/src/Lidar.cpp.o.provides.build
+.PHONY : CMakeFiles/Slam.dir/src/Lidar.cpp.o.provides
 
-CMakeFiles/Slam.dir/Lidar.cpp.o.provides.build: CMakeFiles/Slam.dir/Lidar.cpp.o
-
-
-CMakeFiles/Slam.dir/main.cpp.o: CMakeFiles/Slam.dir/flags.make
-CMakeFiles/Slam.dir/main.cpp.o: main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chrisjerrett/Desktop/Slam/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Slam.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Slam.dir/main.cpp.o -c /Users/chrisjerrett/Desktop/Slam/main.cpp
-
-CMakeFiles/Slam.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Slam.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chrisjerrett/Desktop/Slam/main.cpp > CMakeFiles/Slam.dir/main.cpp.i
-
-CMakeFiles/Slam.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Slam.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chrisjerrett/Desktop/Slam/main.cpp -o CMakeFiles/Slam.dir/main.cpp.s
-
-CMakeFiles/Slam.dir/main.cpp.o.requires:
-
-.PHONY : CMakeFiles/Slam.dir/main.cpp.o.requires
-
-CMakeFiles/Slam.dir/main.cpp.o.provides: CMakeFiles/Slam.dir/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/main.cpp.o.provides.build
-.PHONY : CMakeFiles/Slam.dir/main.cpp.o.provides
-
-CMakeFiles/Slam.dir/main.cpp.o.provides.build: CMakeFiles/Slam.dir/main.cpp.o
+CMakeFiles/Slam.dir/src/Lidar.cpp.o.provides.build: CMakeFiles/Slam.dir/src/Lidar.cpp.o
 
 
-CMakeFiles/Slam.dir/Roomba.cpp.o: CMakeFiles/Slam.dir/flags.make
-CMakeFiles/Slam.dir/Roomba.cpp.o: Roomba.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chrisjerrett/Desktop/Slam/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Slam.dir/Roomba.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Slam.dir/Roomba.cpp.o -c /Users/chrisjerrett/Desktop/Slam/Roomba.cpp
+CMakeFiles/Slam.dir/src/main.cpp.o: CMakeFiles/Slam.dir/flags.make
+CMakeFiles/Slam.dir/src/main.cpp.o: src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chrisjerrett/Desktop/Slam/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Slam.dir/src/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Slam.dir/src/main.cpp.o -c /Users/chrisjerrett/Desktop/Slam/src/main.cpp
 
-CMakeFiles/Slam.dir/Roomba.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Slam.dir/Roomba.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chrisjerrett/Desktop/Slam/Roomba.cpp > CMakeFiles/Slam.dir/Roomba.cpp.i
+CMakeFiles/Slam.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Slam.dir/src/main.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chrisjerrett/Desktop/Slam/src/main.cpp > CMakeFiles/Slam.dir/src/main.cpp.i
 
-CMakeFiles/Slam.dir/Roomba.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Slam.dir/Roomba.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chrisjerrett/Desktop/Slam/Roomba.cpp -o CMakeFiles/Slam.dir/Roomba.cpp.s
+CMakeFiles/Slam.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Slam.dir/src/main.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chrisjerrett/Desktop/Slam/src/main.cpp -o CMakeFiles/Slam.dir/src/main.cpp.s
 
-CMakeFiles/Slam.dir/Roomba.cpp.o.requires:
+CMakeFiles/Slam.dir/src/main.cpp.o.requires:
 
-.PHONY : CMakeFiles/Slam.dir/Roomba.cpp.o.requires
+.PHONY : CMakeFiles/Slam.dir/src/main.cpp.o.requires
 
-CMakeFiles/Slam.dir/Roomba.cpp.o.provides: CMakeFiles/Slam.dir/Roomba.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/Roomba.cpp.o.provides.build
-.PHONY : CMakeFiles/Slam.dir/Roomba.cpp.o.provides
+CMakeFiles/Slam.dir/src/main.cpp.o.provides: CMakeFiles/Slam.dir/src/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/src/main.cpp.o.provides.build
+.PHONY : CMakeFiles/Slam.dir/src/main.cpp.o.provides
 
-CMakeFiles/Slam.dir/Roomba.cpp.o.provides.build: CMakeFiles/Slam.dir/Roomba.cpp.o
-
-
-CMakeFiles/Slam.dir/StepperMotor.cpp.o: CMakeFiles/Slam.dir/flags.make
-CMakeFiles/Slam.dir/StepperMotor.cpp.o: StepperMotor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chrisjerrett/Desktop/Slam/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Slam.dir/StepperMotor.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Slam.dir/StepperMotor.cpp.o -c /Users/chrisjerrett/Desktop/Slam/StepperMotor.cpp
-
-CMakeFiles/Slam.dir/StepperMotor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Slam.dir/StepperMotor.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chrisjerrett/Desktop/Slam/StepperMotor.cpp > CMakeFiles/Slam.dir/StepperMotor.cpp.i
-
-CMakeFiles/Slam.dir/StepperMotor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Slam.dir/StepperMotor.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chrisjerrett/Desktop/Slam/StepperMotor.cpp -o CMakeFiles/Slam.dir/StepperMotor.cpp.s
-
-CMakeFiles/Slam.dir/StepperMotor.cpp.o.requires:
-
-.PHONY : CMakeFiles/Slam.dir/StepperMotor.cpp.o.requires
-
-CMakeFiles/Slam.dir/StepperMotor.cpp.o.provides: CMakeFiles/Slam.dir/StepperMotor.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/StepperMotor.cpp.o.provides.build
-.PHONY : CMakeFiles/Slam.dir/StepperMotor.cpp.o.provides
-
-CMakeFiles/Slam.dir/StepperMotor.cpp.o.provides.build: CMakeFiles/Slam.dir/StepperMotor.cpp.o
+CMakeFiles/Slam.dir/src/main.cpp.o.provides.build: CMakeFiles/Slam.dir/src/main.cpp.o
 
 
-CMakeFiles/Slam.dir/PaintArea.cpp.o: CMakeFiles/Slam.dir/flags.make
-CMakeFiles/Slam.dir/PaintArea.cpp.o: PaintArea.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chrisjerrett/Desktop/Slam/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Slam.dir/PaintArea.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Slam.dir/PaintArea.cpp.o -c /Users/chrisjerrett/Desktop/Slam/PaintArea.cpp
+CMakeFiles/Slam.dir/src/Roomba.cpp.o: CMakeFiles/Slam.dir/flags.make
+CMakeFiles/Slam.dir/src/Roomba.cpp.o: src/Roomba.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chrisjerrett/Desktop/Slam/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Slam.dir/src/Roomba.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Slam.dir/src/Roomba.cpp.o -c /Users/chrisjerrett/Desktop/Slam/src/Roomba.cpp
 
-CMakeFiles/Slam.dir/PaintArea.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Slam.dir/PaintArea.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chrisjerrett/Desktop/Slam/PaintArea.cpp > CMakeFiles/Slam.dir/PaintArea.cpp.i
+CMakeFiles/Slam.dir/src/Roomba.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Slam.dir/src/Roomba.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chrisjerrett/Desktop/Slam/src/Roomba.cpp > CMakeFiles/Slam.dir/src/Roomba.cpp.i
 
-CMakeFiles/Slam.dir/PaintArea.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Slam.dir/PaintArea.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chrisjerrett/Desktop/Slam/PaintArea.cpp -o CMakeFiles/Slam.dir/PaintArea.cpp.s
+CMakeFiles/Slam.dir/src/Roomba.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Slam.dir/src/Roomba.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chrisjerrett/Desktop/Slam/src/Roomba.cpp -o CMakeFiles/Slam.dir/src/Roomba.cpp.s
 
-CMakeFiles/Slam.dir/PaintArea.cpp.o.requires:
+CMakeFiles/Slam.dir/src/Roomba.cpp.o.requires:
 
-.PHONY : CMakeFiles/Slam.dir/PaintArea.cpp.o.requires
+.PHONY : CMakeFiles/Slam.dir/src/Roomba.cpp.o.requires
 
-CMakeFiles/Slam.dir/PaintArea.cpp.o.provides: CMakeFiles/Slam.dir/PaintArea.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/PaintArea.cpp.o.provides.build
-.PHONY : CMakeFiles/Slam.dir/PaintArea.cpp.o.provides
+CMakeFiles/Slam.dir/src/Roomba.cpp.o.provides: CMakeFiles/Slam.dir/src/Roomba.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/src/Roomba.cpp.o.provides.build
+.PHONY : CMakeFiles/Slam.dir/src/Roomba.cpp.o.provides
 
-CMakeFiles/Slam.dir/PaintArea.cpp.o.provides.build: CMakeFiles/Slam.dir/PaintArea.cpp.o
+CMakeFiles/Slam.dir/src/Roomba.cpp.o.provides.build: CMakeFiles/Slam.dir/src/Roomba.cpp.o
 
 
-CMakeFiles/Slam.dir/Calculations.cpp.o: CMakeFiles/Slam.dir/flags.make
-CMakeFiles/Slam.dir/Calculations.cpp.o: Calculations.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chrisjerrett/Desktop/Slam/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Slam.dir/Calculations.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Slam.dir/Calculations.cpp.o -c /Users/chrisjerrett/Desktop/Slam/Calculations.cpp
+CMakeFiles/Slam.dir/src/PaintArea.cpp.o: CMakeFiles/Slam.dir/flags.make
+CMakeFiles/Slam.dir/src/PaintArea.cpp.o: src/PaintArea.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chrisjerrett/Desktop/Slam/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Slam.dir/src/PaintArea.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Slam.dir/src/PaintArea.cpp.o -c /Users/chrisjerrett/Desktop/Slam/src/PaintArea.cpp
 
-CMakeFiles/Slam.dir/Calculations.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Slam.dir/Calculations.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chrisjerrett/Desktop/Slam/Calculations.cpp > CMakeFiles/Slam.dir/Calculations.cpp.i
+CMakeFiles/Slam.dir/src/PaintArea.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Slam.dir/src/PaintArea.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chrisjerrett/Desktop/Slam/src/PaintArea.cpp > CMakeFiles/Slam.dir/src/PaintArea.cpp.i
 
-CMakeFiles/Slam.dir/Calculations.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Slam.dir/Calculations.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chrisjerrett/Desktop/Slam/Calculations.cpp -o CMakeFiles/Slam.dir/Calculations.cpp.s
+CMakeFiles/Slam.dir/src/PaintArea.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Slam.dir/src/PaintArea.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chrisjerrett/Desktop/Slam/src/PaintArea.cpp -o CMakeFiles/Slam.dir/src/PaintArea.cpp.s
 
-CMakeFiles/Slam.dir/Calculations.cpp.o.requires:
+CMakeFiles/Slam.dir/src/PaintArea.cpp.o.requires:
 
-.PHONY : CMakeFiles/Slam.dir/Calculations.cpp.o.requires
+.PHONY : CMakeFiles/Slam.dir/src/PaintArea.cpp.o.requires
 
-CMakeFiles/Slam.dir/Calculations.cpp.o.provides: CMakeFiles/Slam.dir/Calculations.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/Calculations.cpp.o.provides.build
-.PHONY : CMakeFiles/Slam.dir/Calculations.cpp.o.provides
+CMakeFiles/Slam.dir/src/PaintArea.cpp.o.provides: CMakeFiles/Slam.dir/src/PaintArea.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/src/PaintArea.cpp.o.provides.build
+.PHONY : CMakeFiles/Slam.dir/src/PaintArea.cpp.o.provides
 
-CMakeFiles/Slam.dir/Calculations.cpp.o.provides.build: CMakeFiles/Slam.dir/Calculations.cpp.o
+CMakeFiles/Slam.dir/src/PaintArea.cpp.o.provides.build: CMakeFiles/Slam.dir/src/PaintArea.cpp.o
+
+
+CMakeFiles/Slam.dir/src/Calculations.cpp.o: CMakeFiles/Slam.dir/flags.make
+CMakeFiles/Slam.dir/src/Calculations.cpp.o: src/Calculations.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chrisjerrett/Desktop/Slam/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Slam.dir/src/Calculations.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Slam.dir/src/Calculations.cpp.o -c /Users/chrisjerrett/Desktop/Slam/src/Calculations.cpp
+
+CMakeFiles/Slam.dir/src/Calculations.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Slam.dir/src/Calculations.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chrisjerrett/Desktop/Slam/src/Calculations.cpp > CMakeFiles/Slam.dir/src/Calculations.cpp.i
+
+CMakeFiles/Slam.dir/src/Calculations.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Slam.dir/src/Calculations.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chrisjerrett/Desktop/Slam/src/Calculations.cpp -o CMakeFiles/Slam.dir/src/Calculations.cpp.s
+
+CMakeFiles/Slam.dir/src/Calculations.cpp.o.requires:
+
+.PHONY : CMakeFiles/Slam.dir/src/Calculations.cpp.o.requires
+
+CMakeFiles/Slam.dir/src/Calculations.cpp.o.provides: CMakeFiles/Slam.dir/src/Calculations.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/src/Calculations.cpp.o.provides.build
+.PHONY : CMakeFiles/Slam.dir/src/Calculations.cpp.o.provides
+
+CMakeFiles/Slam.dir/src/Calculations.cpp.o.provides.build: CMakeFiles/Slam.dir/src/Calculations.cpp.o
 
 
 # Object files for target Slam
 Slam_OBJECTS = \
-"CMakeFiles/Slam.dir/Lidar.cpp.o" \
-"CMakeFiles/Slam.dir/main.cpp.o" \
-"CMakeFiles/Slam.dir/Roomba.cpp.o" \
-"CMakeFiles/Slam.dir/StepperMotor.cpp.o" \
-"CMakeFiles/Slam.dir/PaintArea.cpp.o" \
-"CMakeFiles/Slam.dir/Calculations.cpp.o"
+"CMakeFiles/Slam.dir/src/Lidar.cpp.o" \
+"CMakeFiles/Slam.dir/src/main.cpp.o" \
+"CMakeFiles/Slam.dir/src/Roomba.cpp.o" \
+"CMakeFiles/Slam.dir/src/PaintArea.cpp.o" \
+"CMakeFiles/Slam.dir/src/Calculations.cpp.o"
 
 # External object files for target Slam
 Slam_EXTERNAL_OBJECTS =
 
-Slam: CMakeFiles/Slam.dir/Lidar.cpp.o
-Slam: CMakeFiles/Slam.dir/main.cpp.o
-Slam: CMakeFiles/Slam.dir/Roomba.cpp.o
-Slam: CMakeFiles/Slam.dir/StepperMotor.cpp.o
-Slam: CMakeFiles/Slam.dir/PaintArea.cpp.o
-Slam: CMakeFiles/Slam.dir/Calculations.cpp.o
+Slam: CMakeFiles/Slam.dir/src/Lidar.cpp.o
+Slam: CMakeFiles/Slam.dir/src/main.cpp.o
+Slam: CMakeFiles/Slam.dir/src/Roomba.cpp.o
+Slam: CMakeFiles/Slam.dir/src/PaintArea.cpp.o
+Slam: CMakeFiles/Slam.dir/src/Calculations.cpp.o
 Slam: CMakeFiles/Slam.dir/build.make
 Slam: /Users/chrisjerrett/Qt/5.8/clang_64/lib/QtWidgets.framework/QtWidgets
 Slam: /Users/chrisjerrett/Qt/5.8/clang_64/lib/QtGui.framework/QtGui
 Slam: /Users/chrisjerrett/Qt/5.8/clang_64/lib/QtCore.framework/QtCore
 Slam: CMakeFiles/Slam.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/chrisjerrett/Desktop/Slam/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Slam"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/chrisjerrett/Desktop/Slam/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Slam"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Slam.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -232,12 +206,11 @@ CMakeFiles/Slam.dir/build: Slam
 
 .PHONY : CMakeFiles/Slam.dir/build
 
-CMakeFiles/Slam.dir/requires: CMakeFiles/Slam.dir/Lidar.cpp.o.requires
-CMakeFiles/Slam.dir/requires: CMakeFiles/Slam.dir/main.cpp.o.requires
-CMakeFiles/Slam.dir/requires: CMakeFiles/Slam.dir/Roomba.cpp.o.requires
-CMakeFiles/Slam.dir/requires: CMakeFiles/Slam.dir/StepperMotor.cpp.o.requires
-CMakeFiles/Slam.dir/requires: CMakeFiles/Slam.dir/PaintArea.cpp.o.requires
-CMakeFiles/Slam.dir/requires: CMakeFiles/Slam.dir/Calculations.cpp.o.requires
+CMakeFiles/Slam.dir/requires: CMakeFiles/Slam.dir/src/Lidar.cpp.o.requires
+CMakeFiles/Slam.dir/requires: CMakeFiles/Slam.dir/src/main.cpp.o.requires
+CMakeFiles/Slam.dir/requires: CMakeFiles/Slam.dir/src/Roomba.cpp.o.requires
+CMakeFiles/Slam.dir/requires: CMakeFiles/Slam.dir/src/PaintArea.cpp.o.requires
+CMakeFiles/Slam.dir/requires: CMakeFiles/Slam.dir/src/Calculations.cpp.o.requires
 
 .PHONY : CMakeFiles/Slam.dir/requires
 

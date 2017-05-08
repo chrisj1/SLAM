@@ -2,7 +2,7 @@
 // Created by Chris Jerrett on 4/23/17.
 //
 
-#include "Calculations.h"
+#include "../include/Calculations.h"
 
 inline double to_radians(double degrees) {
     return degrees / 180.0 * M_PI;

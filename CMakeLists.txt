@@ -4,11 +4,11 @@ project(Slam)
 set(CMAKE_CXX_STANDARD 11)
 
 set(SOURCE_FILES
-        Lidar.cpp
-        main.cpp
-        Roomba.cpp
-        PaintArea.cpp
-        Calculations.cpp)
+        src/Lidar.cpp
+        src/main.cpp
+        src/Roomba.cpp
+        src/PaintArea.cpp
+        src/Calculations.cpp)
 
 find_package(Qt5Widgets REQUIRED)
 

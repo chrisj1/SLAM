@@ -4,12 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/chrisjerrett/Desktop/Slam/Calculations.cpp" "/Users/chrisjerrett/Desktop/Slam/CMakeFiles/Slam.dir/Calculations.cpp.o"
-  "/Users/chrisjerrett/Desktop/Slam/Lidar.cpp" "/Users/chrisjerrett/Desktop/Slam/CMakeFiles/Slam.dir/Lidar.cpp.o"
-  "/Users/chrisjerrett/Desktop/Slam/PaintArea.cpp" "/Users/chrisjerrett/Desktop/Slam/CMakeFiles/Slam.dir/PaintArea.cpp.o"
-  "/Users/chrisjerrett/Desktop/Slam/Roomba.cpp" "/Users/chrisjerrett/Desktop/Slam/CMakeFiles/Slam.dir/Roomba.cpp.o"
-  "/Users/chrisjerrett/Desktop/Slam/StepperMotor.cpp" "/Users/chrisjerrett/Desktop/Slam/CMakeFiles/Slam.dir/StepperMotor.cpp.o"
-  "/Users/chrisjerrett/Desktop/Slam/main.cpp" "/Users/chrisjerrett/Desktop/Slam/CMakeFiles/Slam.dir/main.cpp.o"
+  "/Users/chrisjerrett/Desktop/Slam/src/Calculations.cpp" "/Users/chrisjerrett/Desktop/Slam/CMakeFiles/Slam.dir/src/Calculations.cpp.o"
+  "/Users/chrisjerrett/Desktop/Slam/src/Lidar.cpp" "/Users/chrisjerrett/Desktop/Slam/CMakeFiles/Slam.dir/src/Lidar.cpp.o"
+  "/Users/chrisjerrett/Desktop/Slam/src/PaintArea.cpp" "/Users/chrisjerrett/Desktop/Slam/CMakeFiles/Slam.dir/src/PaintArea.cpp.o"
+  "/Users/chrisjerrett/Desktop/Slam/src/Roomba.cpp" "/Users/chrisjerrett/Desktop/Slam/CMakeFiles/Slam.dir/src/Roomba.cpp.o"
+  "/Users/chrisjerrett/Desktop/Slam/src/main.cpp" "/Users/chrisjerrett/Desktop/Slam/CMakeFiles/Slam.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

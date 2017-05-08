@@ -1,10 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Slam.dir/Lidar.cpp.o"
-  "CMakeFiles/Slam.dir/main.cpp.o"
-  "CMakeFiles/Slam.dir/Roomba.cpp.o"
-  "CMakeFiles/Slam.dir/StepperMotor.cpp.o"
-  "CMakeFiles/Slam.dir/PaintArea.cpp.o"
-  "CMakeFiles/Slam.dir/Calculations.cpp.o"
+  "CMakeFiles/Slam.dir/src/Lidar.cpp.o"
+  "CMakeFiles/Slam.dir/src/main.cpp.o"
+  "CMakeFiles/Slam.dir/src/Roomba.cpp.o"
+  "CMakeFiles/Slam.dir/src/PaintArea.cpp.o"
+  "CMakeFiles/Slam.dir/src/Calculations.cpp.o"
   "Slam.pdb"
   "Slam"
 )

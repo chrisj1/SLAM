@@ -123,167 +123,140 @@ Slam/fast:
 	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/build
 .PHONY : Slam/fast
 
-Calculations.o: Calculations.cpp.o
+src/Calculations.o: src/Calculations.cpp.o
 
-.PHONY : Calculations.o
-
-# target to build an object file
-Calculations.cpp.o:
-	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/Calculations.cpp.o
-.PHONY : Calculations.cpp.o
-
-Calculations.i: Calculations.cpp.i
-
-.PHONY : Calculations.i
-
-# target to preprocess a source file
-Calculations.cpp.i:
-	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/Calculations.cpp.i
-.PHONY : Calculations.cpp.i
-
-Calculations.s: Calculations.cpp.s
-
-.PHONY : Calculations.s
-
-# target to generate assembly for a file
-Calculations.cpp.s:
-	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/Calculations.cpp.s
-.PHONY : Calculations.cpp.s
-
-Lidar.o: Lidar.cpp.o
-
-.PHONY : Lidar.o
+.PHONY : src/Calculations.o
 
 # target to build an object file
-Lidar.cpp.o:
-	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/Lidar.cpp.o
-.PHONY : Lidar.cpp.o
+src/Calculations.cpp.o:
+	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/src/Calculations.cpp.o
+.PHONY : src/Calculations.cpp.o
 
-Lidar.i: Lidar.cpp.i
+src/Calculations.i: src/Calculations.cpp.i
 
-.PHONY : Lidar.i
+.PHONY : src/Calculations.i
 
 # target to preprocess a source file
-Lidar.cpp.i:
-	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/Lidar.cpp.i
-.PHONY : Lidar.cpp.i
+src/Calculations.cpp.i:
+	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/src/Calculations.cpp.i
+.PHONY : src/Calculations.cpp.i
 
-Lidar.s: Lidar.cpp.s
+src/Calculations.s: src/Calculations.cpp.s
 
-.PHONY : Lidar.s
+.PHONY : src/Calculations.s
 
 # target to generate assembly for a file
-Lidar.cpp.s:
-	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/Lidar.cpp.s
-.PHONY : Lidar.cpp.s
+src/Calculations.cpp.s:
+	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/src/Calculations.cpp.s
+.PHONY : src/Calculations.cpp.s
 
-PaintArea.o: PaintArea.cpp.o
+src/Lidar.o: src/Lidar.cpp.o
 
-.PHONY : PaintArea.o
+.PHONY : src/Lidar.o
 
 # target to build an object file
-PaintArea.cpp.o:
-	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/PaintArea.cpp.o
-.PHONY : PaintArea.cpp.o
+src/Lidar.cpp.o:
+	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/src/Lidar.cpp.o
+.PHONY : src/Lidar.cpp.o
 
-PaintArea.i: PaintArea.cpp.i
+src/Lidar.i: src/Lidar.cpp.i
 
-.PHONY : PaintArea.i
+.PHONY : src/Lidar.i
 
 # target to preprocess a source file
-PaintArea.cpp.i:
-	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/PaintArea.cpp.i
-.PHONY : PaintArea.cpp.i
+src/Lidar.cpp.i:
+	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/src/Lidar.cpp.i
+.PHONY : src/Lidar.cpp.i
 
-PaintArea.s: PaintArea.cpp.s
+src/Lidar.s: src/Lidar.cpp.s
 
-.PHONY : PaintArea.s
+.PHONY : src/Lidar.s
 
 # target to generate assembly for a file
-PaintArea.cpp.s:
-	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/PaintArea.cpp.s
-.PHONY : PaintArea.cpp.s
+src/Lidar.cpp.s:
+	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/src/Lidar.cpp.s
+.PHONY : src/Lidar.cpp.s
 
-Roomba.o: Roomba.cpp.o
+src/PaintArea.o: src/PaintArea.cpp.o
 
-.PHONY : Roomba.o
+.PHONY : src/PaintArea.o
 
 # target to build an object file
-Roomba.cpp.o:
-	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/Roomba.cpp.o
-.PHONY : Roomba.cpp.o
+src/PaintArea.cpp.o:
+	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/src/PaintArea.cpp.o
+.PHONY : src/PaintArea.cpp.o
 
-Roomba.i: Roomba.cpp.i
+src/PaintArea.i: src/PaintArea.cpp.i
 
-.PHONY : Roomba.i
+.PHONY : src/PaintArea.i
 
 # target to preprocess a source file
-Roomba.cpp.i:
-	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/Roomba.cpp.i
-.PHONY : Roomba.cpp.i
+src/PaintArea.cpp.i:
+	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/src/PaintArea.cpp.i
+.PHONY : src/PaintArea.cpp.i
 
-Roomba.s: Roomba.cpp.s
+src/PaintArea.s: src/PaintArea.cpp.s
 
-.PHONY : Roomba.s
+.PHONY : src/PaintArea.s
 
 # target to generate assembly for a file
-Roomba.cpp.s:
-	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/Roomba.cpp.s
-.PHONY : Roomba.cpp.s
+src/PaintArea.cpp.s:
+	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/src/PaintArea.cpp.s
+.PHONY : src/PaintArea.cpp.s
 
-StepperMotor.o: StepperMotor.cpp.o
+src/Roomba.o: src/Roomba.cpp.o
 
-.PHONY : StepperMotor.o
+.PHONY : src/Roomba.o
 
 # target to build an object file
-StepperMotor.cpp.o:
-	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/StepperMotor.cpp.o
-.PHONY : StepperMotor.cpp.o
+src/Roomba.cpp.o:
+	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/src/Roomba.cpp.o
+.PHONY : src/Roomba.cpp.o
 
-StepperMotor.i: StepperMotor.cpp.i
+src/Roomba.i: src/Roomba.cpp.i
 
-.PHONY : StepperMotor.i
+.PHONY : src/Roomba.i
 
 # target to preprocess a source file
-StepperMotor.cpp.i:
-	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/StepperMotor.cpp.i
-.PHONY : StepperMotor.cpp.i
+src/Roomba.cpp.i:
+	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/src/Roomba.cpp.i
+.PHONY : src/Roomba.cpp.i
 
-StepperMotor.s: StepperMotor.cpp.s
+src/Roomba.s: src/Roomba.cpp.s
 
-.PHONY : StepperMotor.s
+.PHONY : src/Roomba.s
 
 # target to generate assembly for a file
-StepperMotor.cpp.s:
-	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/StepperMotor.cpp.s
-.PHONY : StepperMotor.cpp.s
+src/Roomba.cpp.s:
+	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/src/Roomba.cpp.s
+.PHONY : src/Roomba.cpp.s
 
-main.o: main.cpp.o
+src/main.o: src/main.cpp.o
 
-.PHONY : main.o
+.PHONY : src/main.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-main.i: main.cpp.i
+src/main.i: src/main.cpp.i
 
-.PHONY : main.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-main.s: main.cpp.s
+src/main.s: src/main.cpp.s
 
-.PHONY : main.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/Slam.dir/build.make CMakeFiles/Slam.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -294,24 +267,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Slam"
-	@echo "... Calculations.o"
-	@echo "... Calculations.i"
-	@echo "... Calculations.s"
-	@echo "... Lidar.o"
-	@echo "... Lidar.i"
-	@echo "... Lidar.s"
-	@echo "... PaintArea.o"
-	@echo "... PaintArea.i"
-	@echo "... PaintArea.s"
-	@echo "... Roomba.o"
-	@echo "... Roomba.i"
-	@echo "... Roomba.s"
-	@echo "... StepperMotor.o"
-	@echo "... StepperMotor.i"
-	@echo "... StepperMotor.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/Calculations.o"
+	@echo "... src/Calculations.i"
+	@echo "... src/Calculations.s"
+	@echo "... src/Lidar.o"
+	@echo "... src/Lidar.i"
+	@echo "... src/Lidar.s"
+	@echo "... src/PaintArea.o"
+	@echo "... src/PaintArea.i"
+	@echo "... src/PaintArea.s"
+	@echo "... src/Roomba.o"
+	@echo "... src/Roomba.i"
+	@echo "... src/Roomba.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

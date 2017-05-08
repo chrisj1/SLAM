@@ -2,7 +2,7 @@
 // Created by Chris Jerrett on 4/23/17.
 //
 
-#include "PaintArea.h"
+#include "../include/PaintArea.h"
 
 PaintArea::PaintArea():QWidget(){
     QPalette pal;

@@ -12,7 +12,7 @@
 #include <QTimer>
 #include <map>
 
-#include "Calculations.cpp"
+#include "../src/Calculations.cpp"
 
 class PaintArea: public QWidget {
 
