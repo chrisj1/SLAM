@@ -4,12 +4,14 @@
 #include <QtWidgets>
 #include <QPushButton>
 #include "PaintArea.h"
+Roomba *r;
 
 void configureRoomba() {
-    Roomba *r = new Roomba("/dev/cu.usbserial-DA01NQY7");
+    r = new Roomba("/dev/cu.usbserial-DA01NQY7");
     sleep(1);
     r->setSensorStream({BumpsWheelDrops, LeftEncoderCounts, RightEncoderCounts});
     sleep(1);
+    cout << "Configured" << endl;
 }
 
 void createWindow(int argc, char* argv[]) {

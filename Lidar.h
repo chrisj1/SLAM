@@ -1,17 +1,27 @@
 #ifndef SLAM_LIDAR_H
 #define SLAM_LIDAR_H
 
-#include "StepperMotor.h"
+#include <iostream>
+#include <stdio.h>
+#include <string.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <errno.h>
+#include <termios.h>
+
+struct LidarData {
+    float angle;
+    int distance;
+};
 
 class Lidar {
     private:
-        int angle;
-        StepperMotor motor;
+        int fileDescriptor = -1;
     public:
-        Lidar(StepperMotor stepperMotor);
-        const int getReading();
-        const int getAngle();
+        Lidar();
+        struct LidarData getReading();
 };
+
 
 
 #endif //SLAM_LIDAR_H

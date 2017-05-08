@@ -7,7 +7,6 @@ set(SOURCE_FILES
         Lidar.cpp
         main.cpp
         Roomba.cpp
-        StepperMotor.cpp
         PaintArea.cpp
         Calculations.cpp)
 
