@@ -47,6 +47,7 @@
 					<Add option="-DQT_WIDGETS_LIB"/>
 					<Add option="-DQT_GUI_LIB"/>
 					<Add option="-DQT_CORE_LIB"/>
+					<Add directory="/Users/chrisjerrett/Desktop/Slam/include"/>
 					<Add directory="/Users/chrisjerrett/Qt/5.8/clang_64/lib/QtWidgets.framework"/>
 					<Add directory="/Users/chrisjerrett/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers"/>
 					<Add directory="/Users/chrisjerrett/Qt/5.8/clang_64/lib/QtGui.framework"/>
@@ -80,6 +81,7 @@
 					<Add option="-DQT_WIDGETS_LIB"/>
 					<Add option="-DQT_GUI_LIB"/>
 					<Add option="-DQT_CORE_LIB"/>
+					<Add directory="/Users/chrisjerrett/Desktop/Slam/include"/>
 					<Add directory="/Users/chrisjerrett/Qt/5.8/clang_64/lib/QtWidgets.framework"/>
 					<Add directory="/Users/chrisjerrett/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers"/>
 					<Add directory="/Users/chrisjerrett/Qt/5.8/clang_64/lib/QtGui.framework"/>

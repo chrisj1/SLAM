@@ -17,6 +17,8 @@ struct LidarData {
 class Lidar {
     private:
         int fileDescriptor = -1;
+
+        int binaryConcat(char high, char low) const;
     public:
         Lidar();
         struct LidarData getReading();

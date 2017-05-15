@@ -21,6 +21,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "include"
   "/Users/chrisjerrett/Qt/5.8/clang_64/lib/QtWidgets.framework"
   "/Users/chrisjerrett/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers"
   "/Users/chrisjerrett/Qt/5.8/clang_64/lib/QtGui.framework"

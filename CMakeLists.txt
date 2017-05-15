@@ -10,8 +10,17 @@ set(SOURCE_FILES
         src/PaintArea.cpp
         src/Calculations.cpp)
 
+include_directories(include)
+
+set(SOUCRE_FILES
+        include/Calculations.h
+        include/Lidar.h
+        include/PaintArea.h
+        include/Roomba.h)
+
 find_package(Qt5Widgets REQUIRED)
 
 add_executable(Slam ${SOURCE_FILES})
+
 
 target_link_libraries(Slam Qt5::Widgets)

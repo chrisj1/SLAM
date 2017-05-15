@@ -101,8 +101,10 @@ QtWidgets
 -
 QPushButton
 -
-../include/PaintArea.h
-/Users/chrisjerrett/Desktop/Slam/include/PaintArea.h
+PaintArea.h
+/Users/chrisjerrett/Desktop/Slam/src/PaintArea.h
+Lidar.h
+/Users/chrisjerrett/Desktop/Slam/src/Lidar.h
 
 /Users/chrisjerrett/Qt/5.8/clang_64/lib/QtCore.framework/Headers/QTimer
 qtimer.h
@@ -203,4 +205,44 @@ QtGui/qevent.h
 -
 
 /Users/chrisjerrett/Qt/5.8/clang_64/lib/QtWidgets.framework/QtWidgets
+
+include/Calculations.h
+math.h
+include/math.h
+
+include/Lidar.h
+iostream
+-
+stdio.h
+-
+string.h
+-
+unistd.h
+-
+fcntl.h
+-
+errno.h
+-
+termios.h
+-
+
+include/PaintArea.h
+QWidget
+-
+QPainter
+-
+iostream
+-
+cmath
+-
+QTimer
+-
+map
+-
+../src/Calculations.cpp
+src/Calculations.cpp
+
+src/Calculations.cpp
+../include/Calculations.h
+include/Calculations.h
 

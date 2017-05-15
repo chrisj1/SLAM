@@ -134,7 +134,6 @@ const void Roomba::writeChar(const unsigned char command) {
         disconnected();
         writeChar(command);
     }
-
 }
 
 const void Roomba::writeCharArray(const unsigned char commands[], int length) {
@@ -186,7 +185,6 @@ const void Roomba::disconnected() {
     }
     sendStart();
     cout << "Reconnected to create" << endl;
-
 }
 
 const void Roomba::monitorSensors() {
@@ -277,21 +275,17 @@ void Roomba::parseDistance(unsigned char *elem) {
 
 }
 
-
 void Roomba::parseAngle(const unsigned char *elem) {
 
 }
-
 
 void Roomba::parseLeftEncoderCounts(const unsigned char *elem) {
 
 }
 
-
 void Roomba::parseRightEncoderCounts(const unsigned char *elem) {
 
 }
-
 
 Roomba::~Roomba() {
     sensorThread->join();
@@ -316,8 +310,6 @@ const void Roomba::beep() {
 }
 
 void Roomba::parseBumpAndWheelDrop(unsigned char *byte) {
-
-    //printf("0x%x\n", *byte);
 
     if (*byte >> 4 & 0b1111)
         return;

@@ -1,9 +1,10 @@
 #include <iostream>
-#include "../include/Roomba.h"
+#include "Roomba.h"
 #include <QtGui>
 #include <QtWidgets>
 #include <QPushButton>
-#include "../include/PaintArea.h"
+#include "PaintArea.h"
+#include "Lidar.h"
 Roomba *r;
 
 void configureRoomba() {
@@ -24,6 +25,12 @@ void createWindow(int argc, char* argv[]) {
 
 
 int main(int argc, char *argv[]) {
+    Lidar l;
+    /*while(true) {
+        l.getReading();
+        usleep(5000);
+    }*/
+
     //configureRoomba();
     createWindow(argc, argv);
     return 0;

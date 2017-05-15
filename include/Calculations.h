@@ -14,3 +14,4 @@ inline int max(int a, int b);
 inline int min(int a, int b);
 
 #endif //SLAM_CALCULATIONS_H
+
