@@ -25,6 +25,8 @@ errno.h
 -
 termios.h
 -
+bitset
+-
 
 /Users/chrisjerrett/Desktop/Slam/include/PaintArea.h
 QWidget
@@ -93,13 +95,11 @@ termios.h
 /Users/chrisjerrett/Desktop/Slam/src/main.cpp
 iostream
 -
-../include/Roomba.h
-/Users/chrisjerrett/Desktop/Slam/include/Roomba.h
+Roomba.h
+/Users/chrisjerrett/Desktop/Slam/src/Roomba.h
 QtGui
 -
 QtWidgets
--
-QPushButton
 -
 PaintArea.h
 /Users/chrisjerrett/Desktop/Slam/src/PaintArea.h
@@ -158,19 +158,9 @@ QtGui/qfontmetrics.h
 
 /Users/chrisjerrett/Qt/5.8/clang_64/lib/QtGui.framework/QtGui
 
-/Users/chrisjerrett/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/QPushButton
-qpushbutton.h
-/Users/chrisjerrett/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/qpushbutton.h
-
 /Users/chrisjerrett/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/QWidget
 qwidget.h
 /Users/chrisjerrett/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/qwidget.h
-
-/Users/chrisjerrett/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/qpushbutton.h
-QtWidgets/qtwidgetsglobal.h
--
-QtWidgets/qabstractbutton.h
--
 
 /Users/chrisjerrett/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/qwidget.h
 QtWidgets/qtwidgetsglobal.h
@@ -225,6 +215,8 @@ errno.h
 -
 termios.h
 -
+bitset
+-
 
 include/PaintArea.h
 QWidget
@@ -241,6 +233,38 @@ map
 -
 ../src/Calculations.cpp
 src/Calculations.cpp
+
+include/Roomba.h
+iostream
+-
+string
+-
+cstdlib
+-
+initializer_list
+-
+pthread.h
+-
+unistd.h
+-
+thread
+-
+vector
+-
+map
+-
+stdio.h
+-
+string.h
+-
+unistd.h
+-
+fcntl.h
+-
+errno.h
+-
+termios.h
+-
 
 src/Calculations.cpp
 ../include/Calculations.h

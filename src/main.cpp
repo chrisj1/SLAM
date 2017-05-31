@@ -2,7 +2,6 @@
 #include "Roomba.h"
 #include <QtGui>
 #include <QtWidgets>
-#include <QPushButton>
 #include "PaintArea.h"
 #include "Lidar.h"
 Roomba *r;
@@ -26,12 +25,12 @@ void createWindow(int argc, char* argv[]) {
 
 int main(int argc, char *argv[]) {
     Lidar l;
-    /*while(true) {
+    //createWindow(argc, argv);
+    while(true) {
         l.getReading();
-        usleep(5000);
-    }*/
+        usleep(100000);
+    }
 
     //configureRoomba();
-    createWindow(argc, argv);
     return 0;
 }

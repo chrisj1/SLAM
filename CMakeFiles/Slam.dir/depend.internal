@@ -22,19 +22,17 @@ CMakeFiles/Slam.dir/src/Roomba.cpp.o
  /Users/chrisjerrett/Desktop/Slam/include/Roomba.h
  /Users/chrisjerrett/Desktop/Slam/src/Roomba.cpp
 CMakeFiles/Slam.dir/src/main.cpp.o
- /Users/chrisjerrett/Desktop/Slam/include/Roomba.h
  /Users/chrisjerrett/Desktop/Slam/src/main.cpp
  /Users/chrisjerrett/Qt/5.8/clang_64/lib/QtCore.framework/Headers/QTimer
  /Users/chrisjerrett/Qt/5.8/clang_64/lib/QtCore.framework/Headers/qtimer.h
  /Users/chrisjerrett/Qt/5.8/clang_64/lib/QtGui.framework/Headers/QPainter
  /Users/chrisjerrett/Qt/5.8/clang_64/lib/QtGui.framework/Headers/qpainter.h
  /Users/chrisjerrett/Qt/5.8/clang_64/lib/QtGui.framework/QtGui
- /Users/chrisjerrett/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/QPushButton
  /Users/chrisjerrett/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/QWidget
- /Users/chrisjerrett/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/qpushbutton.h
  /Users/chrisjerrett/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/qwidget.h
  /Users/chrisjerrett/Qt/5.8/clang_64/lib/QtWidgets.framework/QtWidgets
  include/Calculations.h
  include/Lidar.h
  include/PaintArea.h
+ include/Roomba.h
  src/Calculations.cpp

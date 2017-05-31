@@ -8,6 +8,7 @@
 #include <fcntl.h>
 #include <errno.h>
 #include <termios.h>
+#include <bitset>
 
 struct LidarData {
     float angle;
@@ -18,7 +19,7 @@ class Lidar {
     private:
         int fileDescriptor = -1;
 
-        int binaryConcat(char high, char low) const;
+        unsigned int binaryConcat(char high, char low) const;
     public:
         Lidar();
         struct LidarData getReading();
